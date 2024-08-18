@@ -24,6 +24,11 @@ Profile Widget
   Single Child Scroll View
   =======================
   ![image](https://github.com/user-attachments/assets/3bbb6b5a-0ca5-4a98-9f85-a935801a7d73)
+
+  Stack
+  =======
+  ![image](https://github.com/user-attachments/assets/a3831fe1-aadb-4996-9b56-a49731f53639)
+
   
 
 
