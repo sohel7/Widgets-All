@@ -2,8 +2,10 @@
 import 'package:flutter/material.dart';
 
 import 'all_widgetrs_store/column_file.dart';
+import 'all_widgetrs_store/rich_text_custome.dart';
 import 'all_widgetrs_store/row_file.dart';
 import 'all_widgetrs_store/scrollable_widget.dart';
+import 'all_widgetrs_store/search_box_custom.dart';
 
 
 void main() {
@@ -36,15 +38,24 @@ class MyHomePage extends StatelessWidget {
             fontSize: 30, fontWeight: FontWeight.w900),
       ),backgroundColor: Colors.pink,),
 
-      body: const Center(
-        child: Padding(
-          padding: EdgeInsets.all(8.0),
-          // All WIDGET ADDED HERE
-          child: ProfileWidget()
-          //CustomRowWidget(),
-         //   ScrollableWidget()
+      body: const Padding(
+        padding: EdgeInsets.all(8.0),
+        child: SizedBox(
+          width: 500,
+           child: CustomSearchWidget()
         ),
-      ),
+      )
+      // body: const Center(
+      //   child: Padding(
+      //     padding: EdgeInsets.all(8.0),
+      //     // All WIDGET ADDED HERE
+      //     child: CustomSearchWidget(),
+      //     //CustomRichText(),
+      //     //ProfileWidget()
+      //     //CustomRowWidget(),
+      //    //   ScrollableWidget()
+      //   ),
+      // ),
     );
   }
 }
