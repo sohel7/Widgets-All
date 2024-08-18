@@ -38,24 +38,28 @@ class MyHomePage extends StatelessWidget {
             fontSize: 30, fontWeight: FontWeight.w900),
       ),backgroundColor: Colors.pink,),
 
-      body: const Padding(
-        padding: EdgeInsets.all(8.0),
-        child: SizedBox(
-          width: 500,
-           child: CustomSearchWidget()
-        ),
-      )
-      // body: const Center(
-      //   child: Padding(
-      //     padding: EdgeInsets.all(8.0),
-      //     // All WIDGET ADDED HERE
-      //     child: CustomSearchWidget(),
-      //     //CustomRichText(),
-      //     //ProfileWidget()
-      //     //CustomRowWidget(),
-      //    //   ScrollableWidget()
+      // body: const Padding(
+      //   padding: EdgeInsets.all(8.0),
+      //   child: SizedBox(
+      //     width: 500,
+      //      child: CustomSearchWidget()
       //   ),
-      // ),
+      // )
+      body: const Column(
+        children: [
+          Center(
+            child: Padding(
+              padding: EdgeInsets.all(8.0),
+              // All WIDGET ADDED HERE
+              child: CustomSearchWidget(),
+              //CustomRichText(),
+              //ProfileWidget()
+              //CustomRowWidget(),
+             //   ScrollableWidget()
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
