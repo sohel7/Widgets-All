@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 
+import 'all_widgetrs_store/column_file.dart';
 import 'all_widgetrs_store/row_file.dart';
 import 'all_widgetrs_store/scrollable_widget.dart';
 
@@ -29,14 +30,19 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('all widgets', style: TextStyle(color: Colors.white, fontSize: 30, fontWeight: FontWeight.w900),),backgroundColor: Colors.pink,),
+      appBar: AppBar(title: const Text('all widgets',
+        style: TextStyle(
+            color: Colors.white,
+            fontSize: 30, fontWeight: FontWeight.w900),
+      ),backgroundColor: Colors.pink,),
 
       body: const Center(
         child: Padding(
           padding: EdgeInsets.all(8.0),
           // All WIDGET ADDED HERE
-          child: //CustomRowWidget(),
-            ScrollableWidget()
+          child: ProfileWidget()
+          //CustomRowWidget(),
+         //   ScrollableWidget()
         ),
       ),
     );
